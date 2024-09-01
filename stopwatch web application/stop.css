@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: image('stop_watch.jpg');
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  h1 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  #display {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  #laps {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #laps li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  #laps li:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  #laps li:hover {
+    background-color: #e0e0e0;
+  }
+  
